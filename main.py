@@ -4,6 +4,8 @@ import traceback
 from pymem import *
 from pymem.process import *
 from enum import Enum
+import os
+import keyboard
 
 
 class ConsoleColor:
@@ -103,7 +105,8 @@ def print_logo():
     print("| __/  \\|_  |  \\ __|/  \\| _ \\ | __|  \\| |_   _| __| _ \\_   _/  \\| |  \\| |  V  | __|  \\| |_   _|")
     print("| _| /\\ |/ /| -< _|| /\\ | v / | _|| | ' | | | | _|| v / | || /\\ | | | ' | \\_/ | _|| | ' | | |  ")
     print("|_||_||_|___|__/___|_||_|_|_\\ |___|_|\\__| |_| |___|_|_\\ |_||_||_|_|_|\\__|_| |_|___|_|\\__| |_|  ")
-    print("Bot Console v19.87")
+    print("Bot Console v19.87      by Sparky [u/Sparky2199; github.com/SparkyTD]")
+    print("(Press Ctrl+C to exit)\n")
 
 
 def print_log(text, delay=0.0):
@@ -111,8 +114,7 @@ def print_log(text, delay=0.0):
     time.sleep(delay)
 
 
-if __name__ == '__main__':
-
+def print_intro():
     print_logo()
     print_log("Connecting to corporate network...", 1)
     print_log("Accessing bot control server...", 0.3)
@@ -128,7 +130,7 @@ if __name__ == '__main__':
     ip = 1
     for bot in bot_ids:
         if bot == "FAZ_BOT_GL_BONNIE":
-            print_log(f"Connecting to '{bot}'...", 1)
+            print_log(f"Found '{bot}' at [TIMEOUT]", 1)
             try:
                 raise BotNotFoundException()
             except BotNotFoundException as e:
@@ -143,16 +145,40 @@ if __name__ == '__main__':
     except FirmwareCorruptException as e:
         traceback.print_exc()
 
-    sys.exit(0)
+    print_log("Connecting to FAZ_BOT_FR_FBEAR...", 1)
+    print_log("Connected!", 0.7)
+
+    os.system("cls")
+    print_logo()
+
+
+if __name__ == '__main__':
 
     freddy = FreddyProcess()
     while True:
         freddy.init()
+        countdown = 5
+        if freddy.is_loaded():
+            print_intro()
         while freddy.is_loaded():
-            print(ConsoleColor.OKBLUE + "Updating battery")
-            freddy.set_battery_counter(100)
-            time.sleep(5)
+            sys.stdout.write(f"Recharging battery in {countdown}...\r")
+            sys.stdout.flush()
+            if countdown == 0:
+                sys.stdout.write("Recharged!                                   \r")
+                sys.stdout.flush()
+                countdown = 6
+            countdown -= 1
+            # freddy.set_battery_counter(100)
+            time.sleep(1)
         if not freddy.is_loaded():
-            print("Freddy not detected:", freddy.get_error())
+            error = freddy.get_error()
+            os.system("cls")
+            print_logo()
+            print(f"Connection lost! ({error})")
+            if error == Error.GAME_NOT_FOUND:
+                print("The game does not appear to be running.")
+            elif error == Error.ADDRESS_NOT_FOUND:
+                print("Unable to find Freddy's battery. Maybe engineering moved it somewhere else in Parts and Service.")
+                print("Check if there's an updated Bot Console at https://github.com/SparkyTD/infinite-freddy-time")
             freddy.init()
             time.sleep(10)
