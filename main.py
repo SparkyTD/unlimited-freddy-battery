@@ -5,7 +5,6 @@ from pymem import *
 from pymem.process import *
 from enum import Enum
 import os
-import keyboard
 
 
 class ConsoleColor:
