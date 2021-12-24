@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="38">
+  <Forms>
+    <CETrainer Class="TTrainerForm" Encoding="Ascii85">=N!Ti):ZfOY!dkav.%E^4KtnTz@:nDIIcr7gxV9E+M;o^ZyQe)DWfP2u.e%TL#$Y@W0=K{;#mTk#7,X]3s[mw@+uUQ:jdwJLMVwk(u%A*AUOlk.bLO?!E$!14]/T,=zXy,pO2+Z3z-R?ns+z]H,d#U:KIDSFO}TP[=$[;DR#Yf[$q0=N_Nvt])!F{(RR9zZJ+{AWQFGH]3kJ+bIQf7qoX6[bQI!oImbAqZ$]NU95SEs8DOXUsN8gHMSPYQyWqQ19.X6.]3eyPauYv?r!/#pV#h%g47=.9loc7-W/dth@%zZrER[{!2Gj{OCIc[;PJ[NqLN[F3O@?d147Ug@^(U*J0kp=dx!4_F@!Wk:WO[B6%Z:54orjTG2@oeW17S4Kj-utyXOd6ab16AnKWI)QSkg1?mm2,C)fi:UBff_PoaG-ayQDf%dtgfveNxVeAd5CHHnLs**jC^WULr;=#QA418m]]3M-LAV)Scs+s)op)H*J}Ic@:x*u?k.nCNvriWDoe9WjQ.4YdF;To#D8.wt?,;tmlF,3jM8{jvy15MT!8VoMpztJ(o$Id[oG?/0)L9enoeR*DBPQvjL;ia=2rPn*hxw3ur!7t_:_$rnDlxl,Plx%?y^/@5(8kiFW1SrZ=nsS@7[T4m.(k];*anVKs}.pW50*y$LyoX78o/JlGV-^Gt70tOTkFX!(t01.{*yfRK_YQ+*{QeRTY8.3cIY4=LERxKbs90^VD$^nk8tf9scGfNe4py2$-HthiJF(2XW7]:AaE3dUREz3uQ8[QN]@7pi;M={u?*=%L]mUTs[_@BUdja]AatJQ2r^I!+Hny7wA^,+}ytVZGtZZIZD9X[0Y)jmfyAXOXd^ftK!$/tGZbHJqJt2Afy#YO@I;qgr31RJBirK.3Sbya=X*z4od%IIGLIQ(!/DrF}L4sMY0i44;SH2!(pn([Xrh=nw}*gI/+M!qYX[=C-FTYuMoIO!/8a[RnsycJ4QNr=%IP-q8*=W[]6k[Wy]*8ALxT-[T}qx;_Ltr}f/FzdKgt[odTohySg2:^K_LU2AV:/!y7VccI=</CETrainer>
+  </Forms>
+  <CheatEntries>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Freddy's Battery"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"fnaf9-Win64-Shipping.exe"+0403AB30</Address>
+      <Offsets>
+        <Offset>B8</Offset>
+        <Offset>50</Offset>
+        <Offset>240</Offset>
+        <Offset>9A8</Offset>
+        <Offset>60</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
