@@ -105,7 +105,8 @@ def print_logo():
     print("| __/  \\|_  |  \\ __|/  \\| _ \\ | __|  \\| |_   _| __| _ \\_   _/  \\| |  \\| |  V  | __|  \\| |_   _|")
     print("| _| /\\ |/ /| -< _|| /\\ | v / | _|| | ' | | | | _|| v / | || /\\ | | | ' | \\_/ | _|| | ' | | |  ")
     print("|_||_||_|___|__/___|_||_|_|_\\ |___|_|\\__| |_| |___|_|_\\ |_||_||_|_|_|\\__|_| |_|___|_|\\__| |_|  ")
-    print("Bot Console v19.87      by Sparky [u/Sparky2199; github.com/SparkyTD]")
+    print("Bot Console v19.87_1")
+    print(" by Sparky [u/Sparky2199; github.com/SparkyTD]")
     print("(Press Ctrl+C to exit)\n")
 
 
@@ -164,6 +165,7 @@ if __name__ == '__main__':
             sys.stdout.write(f"Recharging battery in {countdown}...\r")
             sys.stdout.flush()
             if countdown == 0:
+                freddy.set_battery_counter(100)
                 sys.stdout.write("Recharged!                                   \r")
                 sys.stdout.flush()
                 countdown = 6
@@ -178,7 +180,7 @@ if __name__ == '__main__':
             if error == Error.GAME_NOT_FOUND:
                 print("The game does not appear to be running.")
             elif error == Error.ADDRESS_NOT_FOUND:
-                print("Unable to find Freddy's battery. Maybe engineering moved it somewhere else in Parts and Service.")
-                print("Check if there's an updated Bot Console at https://github.com/SparkyTD/infinite-freddy-time")
+                print("Unable to find Freddy's battery. If you're in the menu, load a save first.")
+                print("If that still doesn't work, check if there is an updated Bot Console at https://github.com/SparkyTD/infinite-freddy-time")
             freddy.init()
             time.sleep(10)
