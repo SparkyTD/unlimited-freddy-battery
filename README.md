@@ -23,7 +23,7 @@ The executable file provided in the Releases section **works out of the box**. H
 Using the script is very easy. Just launch the game and run the script. You can also launch the script first, and then the game, the order doesn't matter. As long as the script is running in the background, Freddy's battery will never deplete. When you're done playing, hit `Ctrl+C` in the script's command window to close it.
 
 ## I have a problem with the script
-Please don't hesitate to open a new Issue in the [Issues](https://github.com/SparkyTD/infinite-freddy-time/issues) tab. Make sure to include as much information as you can about the problem, so it can be fixed faster (Screenshot, Windows version, Game version, etc...).
+Please don't hesitate to open a new Issue in the [Issues](https://github.com/SparkyTD/infinite-freddy-time/issues) tab. Make sure to include as much information as you can about the problem, so it can be fixed faster (Screenshot, Windows version, 64bit or 32bit, Game version, etc...).
 
 ## Why did my antivirus flag the exe file?
 The released executable file is a bundled python script that was made with [pyinstaller](https://www.pyinstaller.org/). Unfortunately there are lots of malwares that use a similar type of packaging, which may cause [some antivirus programs](https://www.virustotal.com/gui/file/a2a26fef6e25e84aba8522caa7162b31c1c5388f017eaf1743dbc3cb18ea7621?nocache=1) to think that this is a virus. To make it even worse, this script works by directly modifying the game's memory, which can also raise some red flags in antivirus softwares. 
