@@ -90,7 +90,7 @@ class BotNotFoundException(Exception):
 
 
 def print_header():
-    print(Fore.GREEN + "Unlimited Freddy Battery v1.1 by Sparky [u/Sparky2199; github.com/SparkyTD]")
+    print(Fore.GREEN + "Unlimited Freddy Battery v1.2 by Sparky [u/Sparky2199; github.com/SparkyTD]")
     print(Fore.LIGHTBLACK_EX + "(Press Ctrl+C to exit)\n")
 
 
