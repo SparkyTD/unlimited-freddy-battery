@@ -31,7 +31,7 @@ The released executable file is a bundled python script that was made with [pyin
 This script is completely harmless, it only does what's described on this page, and nothing else. Feel free to inspect the source code, and use the manual installation method if you don't want to run the released executable.
 
 ## How exactly does this script work?
-The script works by accessing the game's main memory region at offset `"fnaf9-Win64-Shipping.exe"+0x0403AB30`, and following a set of pointers (`0x60 -> 0x9A8 -> 0x240 -> 0x50 -> 0xB8`) to find the uint32 variable that stores Freddy's battery duration in seconds. This number starts from 100 when Freddy gets out of a charging station, and slowly counts down to 0. This script resets this counter to 100 every five seconds.
+The script works by accessing the game's main memory region at offset `"fnaf9-Win64-Shipping.exe"+0x0441B738`, and following a set of pointers (`0x8 -> 0x10 -> 0x38 -> 0xB8`) to find the uint32 variable that stores Freddy's battery duration in seconds. This number starts from 100 when Freddy gets out of a charging station, and slowly counts down to 0. This script resets this counter to 100 every five seconds.
 
 ## License
 Do whatever you want with this script, but if you want to modify and/or redistribute it, **please include a link to this github page**!
