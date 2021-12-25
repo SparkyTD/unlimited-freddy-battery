@@ -26,7 +26,7 @@ Using the script is very easy. Just launch the game and run the script. You can 
 Please don't hesitate to open a new Issue in the [Issues](https://github.com/SparkyTD/infinite-freddy-time/issues) tab. Make sure to include as much information as you can about the problem, so it can be fixed faster (Screenshot, Windows version, Game version, etc...).
 
 ## Why did my antivirus flag the exe file?
-The released executable file is a bundled python script that was made with [pyinstaller](https://www.pyinstaller.org/). Unfortunately there are lots of malwares that use a similar type of packaging, which may cause [some antivirus programs](https://www.virustotal.com/gui/file/47667893eee4c4f5d0b8ad34569eaa8a37c765ec38a3c86482d1eca23ab68e83?nocache=1) to think that this is a virus. To make it even worse, this script works by directly modifying the game's memory, which can also raise some red flags in antivirus softwares. 
+The released executable file is a bundled python script that was made with [pyinstaller](https://www.pyinstaller.org/). Unfortunately there are lots of malwares that use a similar type of packaging, which may cause [some antivirus programs](https://www.virustotal.com/gui/file/a2a26fef6e25e84aba8522caa7162b31c1c5388f017eaf1743dbc3cb18ea7621?nocache=1) to think that this is a virus. To make it even worse, this script works by directly modifying the game's memory, which can also raise some red flags in antivirus softwares. 
 
 This script is completely harmless, it only does what's described on this page, and nothing else. Feel free to inspect the source code, and use the manual installation method if you don't want to run the released executable.
 
