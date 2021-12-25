@@ -90,7 +90,7 @@ class BotNotFoundException(Exception):
 
 
 def print_header():
-    print(Fore.GREEN + "Unlimited Freddy Battery v1.0 by Sparky [u/Sparky2199; github.com/SparkyTD]")
+    print(Fore.GREEN + "Unlimited Freddy Battery v1.1 by Sparky [u/Sparky2199; github.com/SparkyTD]")
     print(Fore.LIGHTBLACK_EX + "(Press Ctrl+C to exit)\n")
 
 
@@ -111,7 +111,6 @@ if __name__ == '__main__':
                     sys.stdout.flush()
                     countdown = 6
                 countdown -= 1
-                # freddy.set_battery_counter(100)
                 time.sleep(1)
             if not freddy.is_loaded():
                 error = freddy.get_error()
