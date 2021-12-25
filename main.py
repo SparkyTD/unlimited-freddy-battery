@@ -18,7 +18,7 @@ class Error(Enum):
 
 class FreddyProcess:
     __PROCESS_NAME = "fnaf9-Win64-Shipping.exe"
-    __MAIN_OFFSETS = [0x0403AB30, 0x60, 0x9A8, 0x240, 0x50]
+    __MAIN_OFFSETS = [0x0441B738, 0x8, 0x10, 0x38]
     __BATTERY_OFFSET = 0xB8
 
     def __init__(self):
