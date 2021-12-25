@@ -103,7 +103,7 @@ if __name__ == '__main__':
             os.system("cls")
             print_header()
             while freddy.is_loaded():
-                sys.stdout.write(Fore.BLUE + f"Recharging battery in {countdown}...\r")
+                sys.stdout.write(Fore.LIGHTBLUE_EX + f"Recharging battery in {countdown}...\r")
                 sys.stdout.flush()
                 if countdown == 0:
                     freddy.set_battery_counter(100)
@@ -117,12 +117,13 @@ if __name__ == '__main__':
                 error = freddy.get_error()
                 os.system("cls")
                 print_header()
-                # print(Fore.RED + f"Connection lost! ({error})")
                 if error == Error.GAME_NOT_FOUND:
                     print(Fore.RED + "The game does not appear to be running.")
                 elif error == Error.ADDRESS_NOT_FOUND:
                     print(Fore.RED + "Unable to find Freddy's battery. If you're in the menu, load a save slot first.")
-                    print(Fore.RED + "If that still doesn't work, check if there is an updated Bot Console at https://github.com/SparkyTD/infinite-freddy-time")
+                    print(Fore.RED + "If that still doesn't work, check if there is an updated version at https://github.com/SparkyTD/unlimited-freddy-battery")
+                else:
+                    print(Fore.RED + "Unknown error.")
                 freddy.init()
                 time.sleep(10)
     except KeyboardInterrupt:
