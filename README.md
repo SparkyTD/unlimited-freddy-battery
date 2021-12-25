@@ -1,6 +1,6 @@
 # Unlimited Freddy Battery
 
-A small python script that gives you unlimited battery time in [Five Night at Freddy's: Security Breach](https://store.steampowered.com/app/747660/Five_Nights_at_Freddys_Security_Breach/). It works by writing directly into the game's memory, and resetting the battery countdown timer every five seconds. **This is a cheat software, so please only use it after you've already finished the game's main storyline!**
+A small python script that gives you unlimited battery time in [Five Night at Freddy's: Security Breach](https://store.steampowered.com/app/747660/Five_Nights_at_Freddys_Security_Breach/). It works by writing directly into the game's memory, and resetting the battery countdown timer every five seconds. **This is a cheat software, so please only use it after you've already finished the game's main storyline, and fully upgraded your Freddy!**
 
 ## Download (no installation)
 The latest release can be downloaded [HERE](https://github.com/SparkyTD/unlimited-freddy-battery/releases/download/v1.1/UnlimitedFreddyBattery.v1.1.exe). There's no need to install anything, just run the executable file.
